@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tile">
+        <h2>Посетители из какой страны совершают больше всего действий на сайте?</h2>
+        <button>Показать/скрыть</button>
+        <div class="list toToggle" id="rep1"></div>
+    </div>
+
+    <div class="tile">
+        <h2>Посетители из какой страны чаще всего интересуются товарами из определенных категорий?</h2>
+        <button>Показать/скрыть</button>
+        <select id="selectCat">
+            <option>Выберите категорию</option>
+        </select>
+        <div class="toToggle toToggleRep2">
+            <span id="sRep2"></span>
+            <div class="list" id="rep2"></div>
+        </div>
+    </div>
+
+    <div class="tile">
+        <h2>Какая нагрузка (число запросов) на сайт за астрономический час?</h2>
+        <div class="center">
+            <p id="sRep4" class="big">0</p>
+            <span>Среднее число запросов в час</span>
+        </div>
+    </div>
+
+    <script src="jq.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
